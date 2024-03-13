@@ -12,6 +12,7 @@ public class HttpImageStatusCli {
                 int code = scanner.nextInt();
                 try {
                     downloader.downloadStatusImage(code);
+                    System.out.println("Downloaded successfully");
                     break;
                 } catch (Exception e) {
                     System.out.println("There is not image for HTTP status " + code);

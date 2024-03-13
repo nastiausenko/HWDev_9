@@ -17,7 +17,6 @@ public class HttpStatusImageDownloader {
                 while ((bytesRead = in.read(buffer)) != -1) {
                     out.write(buffer, 0, bytesRead);
                 }
-                System.out.println("Downloaded successfully");
             }
         } catch (IOException e) {
             throw new RuntimeException("Download failed fo status code:" + code);
